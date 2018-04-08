@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="jp">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Acadebook-search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+
+
+        .menu{
+
+        padding: 0px;
+
+
+
+        }
+
+        .ul,ol,li{
+
+            margin: 0;
+
+            padding: 0;
+
+            font-size: 15px;
+
+            line-height: 1.4;
+
+            list-style: none;
+
+            margin-bottom: 1px;
+
+        }
+
+        .menu li a{
+
+            display: block;
+
+            padding: 10px;
+
+            color: #000;
+
+            text-decoration: none;
+
+            outline: 1px red solid;
+
+        }
+
+        .menu li a:hover{
+
+            background-color: #eeeeff;
+
+        }
+
+
+
+        .menu img{
+
+            float: left;
+
+        }
+
+        .menu .title{
+
+            font-weight: bold;
+
+            color: Black;
+
+        }
+
+
+        .menu li a:after{
+
+            content: "";
+
+            display: block;
+
+            clear: both;
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+<head>
+<script type="text/javascript" src="js/pptx.js" charset="UTF-8"></script>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <body>
+
+  <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="https://achadebookcom.weebly.com/">Acadebook</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+        <div style="margin: 20px auto">
+          <div style="margin-top:10px; margin-left:25px" >
+            <form class="form-inline my-2 my-lg-0">
+              <input id="search-text" class="form-control mr-sm-2" type="text" placeholder="Search">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Category</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item" href="#">人材</a>
+                  <a class="dropdown-item" href="#">モノ</a>
+                  <a class="dropdown-item" href="#">共同研究</a>
+                </div>
+            </li>
+
+            <button class="btn btn-secondary my-2 my-sm-0" type="button"  onclick="searchStart()">Search</button>
+            </form>
+          </div>
+        </div>
+
+<div id="result-draw" align="center">
+
+<div class="card border-info mb-3" style="width: 40rem; height: 12rem; margin-top:10px; " align="left">
+   <div class="menu">
+
+        <li>
+           <img src="Biddy.jpg" width="190px" height="190px">
+
+          <div style="margin: 0 0 0 200px;">
+           <p class="title" style="font-size:30;">Biddy</p>
+           <p class="desc">物理専攻</p>
+         </div>
+
+         </li>
+
+
+   </div>
+ </div>
+
+</div>
+
+</body>
+
+</html>
